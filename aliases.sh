@@ -22,3 +22,5 @@ export ROSCONSOLE_FORMAT='${message}
 alias nan='nano -c'
 alias gopy_output='xclip -selection clipboard'
 alias gti='git'
+export EDITOR='nano -c'
+export ROSCONSOLE_FORMAT='${node}: ${message}'
