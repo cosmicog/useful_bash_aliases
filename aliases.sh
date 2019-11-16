@@ -27,4 +27,5 @@ alias cdd='cd ..'
 alias pito3='export PYTHONPATH='/usr/local/lib/python3.5/dist-packages''
 alias ntfshitfix='chmod -R a-x,o-w,+X'
 alias anrm='adb shell pm uninstall -k --user 0'
-alias debug_ros_linezzz='export ROSCONSOLE_FORMAT='[${node}]:[${file}:${line}]: ${message}''
+debug_ros_linezzz() { export ROSCONSOLE_FORMAT='[${node}]:[${file}:${line}]: ${message}'; }
+alias melo_rosdep_install=`rosdep install --from-paths src --ignore-src --rosdistro=melodic -y`
