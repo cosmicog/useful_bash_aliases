@@ -32,3 +32,5 @@ alias melo_rosdep_install=`rosdep install --from-paths src --ignore-src --rosdis
 alias fix_dir_perms='find -type d -print0 | xargs -0 chmod 0775'
 alias fix_file_perms='find -type f -print0 | xargs -0 chmod 0664'
 alias qtcrls='bash -i -c "qtcreator-ros -stylesheet ~/templates/customizationzzz/qtcreator_stylesheet.css -lastsession"'
+alias killg='killall gzclient && killall gzserver && killall rosmaster'
+alias rosaction_list='rostopic list | grep -o -P '^.*(?=/feedback)''
