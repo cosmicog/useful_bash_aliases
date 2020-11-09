@@ -35,3 +35,4 @@ alias qtcrls='bash -i -c "qtcreator-ros -stylesheet ~/templates/customizationzzz
 alias killg='killall gzclient && killall gzserver && killall rosmaster'
 alias rosaction_list='rostopic list | grep -o -P '^.*(?=/feedback)''
 alias neto_roboto='export ROS_MASTER_URI=http://192.168.1.6:11311 && export ROS_IP=192.168.1.6'
+export HISTTIMEFORMAT="%d/%m/%y %T >>> "
