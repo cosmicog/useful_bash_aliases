@@ -33,7 +33,7 @@ alias noet_rosdep_install='rosdep install --from-paths src --ignore-src --rosdis
 alias fix_dir_perms='find -type d -print0 | xargs -0 chmod 0775'
 alias fix_file_perms='find -type f -print0 | xargs -0 chmod 0664'
 alias qtcrls='bash -i -c "qtcreator-ros -stylesheet ~/templates/customizationzzz/qtcreator_stylesheet.css -lastsession"'
-alias killg='killall gzclient && killall gzserver && killall rosmaster'
+alias killg='killall gzclient && killall gzserver && rosnode kill -a'
 alias rosaction_list='rostopic list | grep -o -P '^.*(?=/feedback)''
 alias neto_roboto='export ROS_MASTER_URI=http://192.168.1.6:11311 && export ROS_IP=192.168.1.6'
 export HISTTIMEFORMAT="%d/%m/%y %T >>> "
